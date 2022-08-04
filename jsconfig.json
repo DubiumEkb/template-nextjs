@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"baseUrl": "src",
+		"paths": {
+			"shared/*": [
+				"shared/*"
+			],
+			"assets/images/*": [
+				"assets/images/*"
+			],
+			"assets/style/*": [
+				"assets/style/*"
+			],
+			"assets/svg/*": [
+				"assets/svg/*"
+			]
+		}
+	}
+}
