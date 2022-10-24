@@ -1,20 +1,27 @@
-// Import Style
-import "assets/styles/globals.css"
+// Import Library
+import classnames from "classnames"
 
-// Import Widgets
-import { Header } from "widgets/header"
-import { Container } from "widgets/container"
-import { Footer } from "widgets/footer"
+// Import Framework
+
+// Import Components
+import { Header, Layout } from "widgets"
+
+// Import Store
+
+// Import Style
+import "assets/styles/globals.scss"
+
+// Import Hooks
 
 function MyApp({ Component, pageProps }) {
+	const classname = classnames("container", "main")
 	return (
-		<>
+		<Layout>
 			<Header />
-			<Container>
+			<main className={classname}>
 				<Component {...pageProps} />
-			</Container>
-			<Footer />
-		</>
+			</main>
+		</Layout>
 	)
 }
 

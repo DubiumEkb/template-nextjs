@@ -1,9 +1,9 @@
 {
   "name": "template-nextjs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env DEV_STATUS=dev next dev",
+    "dev": "next dev",
     "start": "next build && next start",
     "build": "next build && next export",
     "lint:next": "next lint",
@@ -14,26 +14,25 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@pbe/react-yandex-maps": "^1.1.8",
-    "antd": "^4.22.3",
-    "axios": "^0.27.2",
-    "classnames": "^2.3.1",
+    "@pbe/react-yandex-maps": "^1.1.9",
+    "axios": "^1.1.3",
+    "classnames": "^2.3.2",
     "husky": "^8.0.1",
-    "mobx": "^6.6.1",
+    "mobx": "^6.6.2",
     "mobx-react-lite": "^3.4.0",
-    "next": "12.2.3",
+    "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-roubles": "^1.0.20"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "eslint": "8.21.0",
-    "eslint-config-next": "12.2.3",
+    "eslint": "8.26.0",
+    "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react": "7.31.10",
     "prettier": "2.7.1",
-    "sass": "^1.54.2"
+    "sass": "^1.55.0"
   }
 }

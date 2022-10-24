@@ -64,18 +64,15 @@ shared
     │   ├── images/
     │   │   ├── ...images
     │   │   └── index.js // Export всех image
-    │   ├── styles/
-    │   │   └── ...style global and components
-    │   └── svg/
-    │       ├── ...svg
-    │       └── index.js // Export всех svg
+    │   └── styles/
+    │       └── ...style global and components
     ├── entities/
     │   └── ...Папки с Store каждой страницы
     ├── feature/
     │   ├── ...Папки с функциональностью каждой страницы
     │   └── example/
     │       ├── ui/
-    │       │   └── Table/
+    │       │   └── table/
     │       │       ├── Table.module.scss
     │       │       └── index.js
     │       └── index.js // Export всех ui components

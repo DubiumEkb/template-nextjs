@@ -1,0 +1,12 @@
+.rootPage {
+	display: grid;
+	grid-template-columns: 74px auto;
+	grid-template-rows: 120px 1fr;
+	grid-template-areas:
+		"aside header"
+		"aside main";
+	gap: 0px 60px;
+
+	max-width: 1700px;
+	width: 100%;
+}

@@ -5,14 +5,20 @@
 			"shared/*": [
 				"shared/*"
 			],
+			"entities/*": [
+				"entities/*"
+			],
+			"feature/*": [
+				"feature/*"
+			],
+			"widgets/*": [
+				"widgets/*"
+			],
 			"assets/images/*": [
 				"assets/images/*"
 			],
 			"assets/style/*": [
 				"assets/style/*"
-			],
-			"assets/svg/*": [
-				"assets/svg/*"
 			]
 		}
 	}
