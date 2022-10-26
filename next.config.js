@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const path = require("path")
 
-const noHashName = (context, _, exportName) => exportName
+// const noHashName = (context, _, exportName) => exportName
 
 const nextConfig = {
 	reactStrictMode: true,
@@ -12,22 +12,22 @@ const nextConfig = {
 	// images: {
 	// 	domains: ["assets.example.com"],
 	// },
-	webpack(config, { dev }) {
-		if (dev) {
-			const rules = config.module.rules
-				.find((rule) => typeof rule.oneOf === "object")
-				.oneOf.filter((rule) => Array.isArray(rule.use))
+	// webpack(config, { dev }) {
+	// 	if (dev) {
+	// 		const rules = config.module.rules
+	// 			.find((rule) => typeof rule.oneOf === "object")
+	// 			.oneOf.filter((rule) => Array.isArray(rule.use))
 
-			rules.forEach((rule) => {
-				rule.use.forEach((moduleLoader) => {
-					if (moduleLoader.loader?.includes("css-loader") && !moduleLoader.loader?.includes("postcss-loader"))
-						moduleLoader.options.modules.getLocalIdent = noHashName
-				})
-			})
-		}
+	// 		rules.forEach((rule) => {
+	// 			rule.use.forEach((moduleLoader) => {
+	// 				if (moduleLoader.loader?.includes("css-loader") && !moduleLoader.loader?.includes("postcss-loader"))
+	// 					moduleLoader.options.modules.getLocalIdent = noHashName
+	// 			})
+	// 		})
+	// 	}
 
-		return config
-	},
+	// 	return config
+	// },
 }
 
 module.exports = nextConfig

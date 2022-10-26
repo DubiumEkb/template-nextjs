@@ -5,25 +5,25 @@
 ### Запустить проект для разработки
 
 ```bash
-npm run dev
+yarn run dev
 ```
 
 ### Запустить прод версию (SSR)
 
 ```bash
-npm run start
+yarn run start
 ```
 
 ### Сборка для прод сервера (SSG)
 
 ```bash
-npm run build
+yarn run build
 ```
 
 ### Форматирование и проверка кода
 
 ```bash
-npm run format
+yarn run format
 ```
 
 ## Файловая структура

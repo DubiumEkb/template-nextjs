@@ -299,4 +299,4 @@ sketch
 
 # Ignore lock file
 package-lock.json
-yarn.lock
+# yarn.lock
